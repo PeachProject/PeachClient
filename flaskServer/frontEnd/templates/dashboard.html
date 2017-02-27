@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Peach Dashboard - {{session['username']}}</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+        <!-- IMPORTING ALL NECESSARY STYLESHEETS !-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin|Chivo">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('frontEnd.static',filename='css/inc/jquery-ui.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('frontEnd.static',filename='css/inc/nano-scroller.css') }}" />
+
+        <link rel="stylesheet" href="{{ url_for('frontEnd.static',filename='css/level1/base_level1.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('frontEnd.static',filename='css/level2/base_level2.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('frontEnd.static',filename='css/level1/dashboard/dashboard_level1.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('frontEnd.static',filename='css/level2/dashboard/dashboard_level2.css') }}" />
+
+        <!-- JINJA2 STUFF !-->
+        <script>
+            var globalConfig = {
+                "currentDomain": "{{ c['currentDomain']}}",
+                "logoutURL": "{{ c['logoutURL'] }}",
+                "serviceURL": "{{ c['serviceURL' ]}}",
+                "logoutURL": "{{ c['logoutURL'] }}",
+                "sendWorkflowURL": "{{ c['sendWorkflowURL'] }}",
+                "getQueueURL": "{{ c['getQueueURL'] }}",
+                "removeQueueItemURL": "{{ c['removeQueueItemURL'] }}",
+                "getResponseURL": "{{ c['getResponseURL'] }}",
+                "getInitialResponseURL": "{{ c['getInitialResponseURL'] }}",
+                "getInitialRequestURL": "{{ c['getInitialRequestURL'] }}",
+                "downloadTempFileURL": "{{ c['downloadTempFileURL'] }}"
+            };
+            var username = "{{session['username']}}";
+        </script>
+
+        
+        
+        
+
+        <!-- IMPORTING ALL NECESSARY JS MODULES !-->
+    </head>
+    <body>
+        <div class="left_menu">
+            <div class="left_menu_top">
+                <div class="logo red_round_logo"><img src="{{ url_for('frontEnd.static',filename='img/peach_logo_red.png') }}" /></div>
+                <div class="name_container">
+                    <div class="full_name">{{session["username"]}}</div>
+                    <div class="ad_name">{{session["username"]}}</div>
+                </div>
+            </div>
+            <div class="navigation">
+                <ul class="navigation_ul">
+                    <!-- <li class="storage active"><i class="material-icons menu_icon">folder</i> Storage</li>
+                    <li class="queue"><i class="material-icons menu_icon">list</i> Queue</li>
+                    <li class="logout">Logout</li> !-->
+                </div>
+            </div>
+        </div>
+        <div class="queue_view">
+            <div class="running_view_parent">
+                <div class="running_view">
+                    <div class="title_bar" minwidthforaction="460" alternativeActionButtons="#running_alternative_action_buttons">
+                        Queued Jobs <i class="material-icons action_icons sync_button">sync</i>
+                        <ul class="action_buttons running_action_buttons action_buttons_container">
+                            <li action="delete"><i class="material-icons action_icons">delete</i></li>
+                        </ul>
+                    </div>
+                    <div class="queue_content_wrapper">
+                        <ul class="running_content">
+                        </ul>
+                    </div>
+                </div>
+                <div id="running_alternative_action_buttons" class="action_buttons alternative_action_buttons running_action_buttons action_buttons_container">
+                    <li action="delete"><i class="material-icons action_icons">delete</i></li>
+                </div>
+            </div>
+            <div class="archive_view_parent">
+                <div class="archive_view">
+                    <div class="title_bar" minwidthforaction="460" alternativeActionButtons="#archive_alternative_action_buttons">
+                        Archived Jobs
+                        <ul class="action_buttons archive_action_buttons action_buttons_container">
+                            <li action="delete"><i class="material-icons action_icons">delete</i></li>
+                        </ul>
+                    </div>
+                    <div class="queue_content_wrapper">
+                        <ul class="archive_content">
+                        </ul>
+                    </div>
+                </div>  
+                <div id="archive_alternative_action_buttons" class="action_buttons alternative_action_buttons archive_action_buttons action_buttons_container">
+                    <li action="delete"><i class="material-icons action_icons">delete</i></li>
+                </div>
+            </div>      
+                   
+            
+        </div>
+        <div class="storage_view">
+            <div class="title_bar" minwidthforaction="460" alternativeActionButtons="#storage_alternative_action_buttons">
+                <ul class="breadcrumbs">
+                    <li>{{session.username}}</li>
+                </ul>
+                <button class="option_menu_button" for="#storage_option_menu">more_vert</button><!-- TODO: Make auto more_vert !-->
+                
+                <ul class="action_buttons action_buttons_container storage_action_buttons">
+                    <li action="get_uri">Get Uri</li>
+                    <li action="download"><i class="material-icons action_icons">get_app</i></li>
+                    <li action="delete"><i class="material-icons action_icons">delete</i></li>
+                    <li action="edit"><i class="material-icons action_icons">edit</i></li>
+                    <li action="open"><i class="material-icons action_icons">open_in_browser</i></li>
+                    <li action="view"><i class="material-icons action_icons">visibility</i></li>
+                </ul>
+            </div>
+            <div class="storage_content">
+                
+            </div>
+            <div id="storage_alternative_action_buttons" class="storage_action_buttons alternative_action_buttons action_buttons action_buttons_container">
+                <li action="download"><i class="material-icons action_icons">get_app</i></li>
+                <li action="delete"><i class="material-icons action_icons">delete</i></li>
+                <li action="edit"><i class="material-icons action_icons">edit</i></li>
+                <li action="view"><i class="material-icons action_icons">visibility</i></li>
+            </div>
+        </div>
+        <div class="text_editor_view">
+            <div class="title_bar" minwidthforaction="0" alternativeActionButtons="">
+                <div class="text_editor_title"></div>
+
+                <ul class="text_editor_action_buttons action_buttons_container">
+                    <li action="save" class="text_save"><i class="material-icons action_icons">save</i></li>
+                </ul>
+            </div>
+            <div class="text_editor_content">
+            </div>
+            <button class="text_close">clear</button>
+        </div>
+        <div class="workflow_view">
+            <div class="title_bar no_background" minwidthforaction="0" alternativeActionButtons="">
+                <div class="workflow_file_title"></div>
+
+                <ul class="workflow_action_buttons action_buttons_container">
+                    <li action="save" class="save"><i class="material-icons action_icons">save</i></li>
+                </ul>
+            </div>
+            <div class="workflow_content">
+                
+            </div>
+            <button class="collapse">clear</button>
+            <div class="remove_service">delete</div>
+            <div class="send_workflow">send</div>
+        </div>
+        <div class="parameter_view">
+            <div class="title_bar" minwidthforaction="0" alternativeActionButtons="">
+                Parameter
+            </div>
+            <ul class="parameter_container">
+            </ul>
+        </div>
+
+
+        <!-- LOADING GIF !-->
+        <div id="loading" class="loading_bottom_left"></div>
+
+        <!-- MENUS THAT ARE AUTO POSITIONED !-->
+        <ul id="storage_option_menu" class="option_menu">
+        </ul>
+
+        <div class="nothing_selected">
+            <div class="nothing_selected_icon">view_week</div>
+            <div class="nothing_selected_text">No view selected</div>
+        </div>
+
+        <div id="popup">
+            <div id="popup_content">
+            </div>
+        </div>
+
+        <!-- KICK-OFF PARTY !-->
+        <!-- IMPORTING ALL LIBRARIES !-->
+        <script src="{{ url_for('frontEnd.static',filename='js/inc/ace/src-min/ace.js') }}" type="text/javascript" charset="utf-8"></script>         
+        <script src="{{ url_for('frontEnd.static',filename='js/glueCode/bundles/dashboard.js') }}"></script>
+    </body>
+</html>

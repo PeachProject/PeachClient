@@ -1,0 +1,61 @@
+* {
+    font-family: 'Cabin', sans-serif;
+}
+
+.logo
+{
+    color: white;
+    font-weight: bold;
+    font-size: 30pt;
+    font-family: 'Chivo', sans-serif;
+}
+
+label
+{
+    font-size: 12pt;
+    font-weight: 100;
+    color: #6e6e6e;
+    text-align: left;
+}
+
+input.default_input, textarea.default_input
+{
+    border: 1px solid #d5d5d5;
+    font-size: 12pt;
+    color: #000000;
+    font-weight: 100;
+    border-radius: 3px;
+}
+
+input.default_button
+{
+    border: 0;
+    background-color: #da5653; 
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 2px solid #8d2242;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input.default_button:hover
+{
+    background-color: #ff6561;
+}
+
+input.default_button:active
+{
+    background-color: #da5653;
+    padding-top: 2px;
+    border-bottom: 0;
+    outline: 0;
+}
+
+#loading
+{
+    background-image: url(../../img/animations/small_white_loading.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: none;
+}

@@ -1,0 +1,871 @@
+.left_menu
+{
+    background-color: #454545;
+    color: white;
+}
+
+.name_container .full_name
+{
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+}
+
+.name_container .ad_name
+{
+    font-size: 12px;
+    color: #cecece;
+    font-weight: 200;
+}
+
+.left_menu_top
+{
+    border-bottom: 1px solid #7f7f7f;
+}
+
+.navigation ul.navigation_ul li
+{
+    font-size: 14px;
+    color: #d7d7d7;
+    font-weight: 200;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.navigation ul.navigation_ul li:hover
+{
+    background-color: #2f2f2f;
+}
+
+.navigation ul.navigation_ul li.active, .navigation ul.navigation_ul li.active:hover
+{
+    background-color: #da5653;
+    border-left: 5px solid #863533;
+}
+
+.navigation ul.navigation_ul li.storage .storage_submenu li
+{
+    background-color: #863533;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+.navigation ul.navigation_ul li.storage .storage_submenu li:hover
+{
+    padding-left: 30px;
+}
+
+.navigation ul.navigation_ul li.storage .storage_submenu li .add_connection
+{
+    color: white;
+    font-size: 40px;
+    margin-right: 15px;
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -moz-font-feature-settings: 'liga';
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.navigation ul.navigation_ul li.storage .storage_submenu li.active
+{
+    border: 0;
+    font-weight: bold;
+}
+
+.navigation ul.navigation_ul li.storage .storage_submenu li .remove_connection
+{
+
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -moz-font-feature-settings: 'liga';
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    color: white;
+}
+
+.navigation ul.navigation_ul li.storage .storage_submenu li .remove_connection:hover
+{
+    background-color: #da5653;
+}
+
+.menu_icon
+{
+    color: white;
+    font-size: 40px;
+    margin-right: 15px;
+}
+
+.title_bar
+{
+    background-color: #efefef;
+    -webkit-box-shadow: 0 0 8px 1px rgba(0,0,0,0.6);
+    box-shadow: 0 0 8px 1px rgba(0,0,0,0.6);
+    z-index: 3;
+}
+
+ul.breadcrumbs li
+{
+    color: #272727;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+ul.breadcrumbs li:last-child
+{
+    font-weight: bold;
+}
+
+.parameter_view
+{
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.option_menu_button
+{
+    content: 'more_vert';
+    font-family: "Material Icons";
+    color: #272727;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    border-radius: 50%;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -moz-font-feature-settings: 'liga';
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+.option_menu_button:hover
+{
+    background-color: #c4c4c4;
+}
+
+.option_menu_button:active, .option_menu_button.active
+{
+    background-color: #6e6e6e;
+    color: white;
+}
+
+.option_menu_button:hover, .option_menu_button:active, .option_menu_button:focus {
+    outline: 0;
+}
+
+.action_buttons_container li
+{
+    color: #6e6e6e;
+}
+
+.action_buttons_container li:hover
+{
+    color: #272727;
+}
+
+
+ul.option_menu
+{
+    background-color: #efefef;
+    -webkit-box-shadow: 0;
+    box-shadow: 0;
+    border-radius: 5px;
+}
+
+ul.option_menu.active
+{
+    -webkit-box-shadow: 0 0 8px 1px rgba(0,0,0,0.6);
+    box-shadow: 0 0 8px 1px rgba(0,0,0,0.6);
+}
+
+ul.option_menu li
+{
+    border-bottom: 1px solid #cccccc;
+    color: #6e6e6e;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+ul.option_menu li:hover
+{
+    color: #272727;
+    
+}
+
+.storage_item
+{
+    background-color: transparent; 
+    color: #6e6e6e;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
+}
+
+.storage_item:hover
+{
+    background-color: #efefef;
+}
+
+.storage_item.selected
+{
+    background-color: #e3e3e3;
+    color: #da5653;
+}
+
+.storage_item[storageitemtype=folder] .storage_item_icon
+{
+    background-color: #efefef;
+    -webkit-box-shadow: 0 0 8px 1px rgba(0,0,0,0.6);
+    box-shadow: 0 0 8px 1px rgba(0,0,0,0.6);
+}
+
+.storage_item .storage_item_icon
+{
+    font-family: "Material Icons";
+    background: transparent;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 80px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    text-align: center;
+}
+
+.storage_item .storage_item_name
+{
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.workflow_view, .text_editor_view
+{
+    background-color: #e2e2e2;
+    -webkit-box-shadow:inset 3px 0 5px 0 rgba(0,0,0,0.3);
+    box-shadow:inset 3px 0 5px 0 rgba(0,0,0,0.3);
+}
+
+.title_bar.no_background
+{
+    background-color: transparent;   
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#storage_alternative_action_buttons
+{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.workflow_view, .text_editor_view
+{
+    -webkit-transition: width 0.5s ease-in-out;
+    -moz-transition: width 0.5s ease-in-out;
+    -ms-transition: width 0.5s ease-in-out;
+    -o-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+}
+
+.node
+{
+    background-color: white;
+    -webkit-box-shadow:3px 0 5px 0 rgba(0,0,0,0.3);
+    box-shadow:3px 0 5px 0 rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
+
+.node_title
+{
+    border-bottom: 1px solid #e2e2e2;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333333;
+    text-align: center;
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
+}
+
+.port_container
+{
+
+}
+
+.input_ports
+{
+    text-align: left;
+    
+}
+
+.output_ports
+{
+    text-align: right;
+}
+
+.port
+{
+    background-color: transparent;
+    color: #666666;
+    font-weight: 200;
+    font-size: 14px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
+}
+
+.port:hover
+{
+    
+}
+
+.port.out
+{
+    text-align: right;
+}
+
+.port.in
+{
+}
+
+.workflow_view .title_bar
+{
+    background-color: rgba(226, 226, 226, 0.5);
+}
+
+.queue_item
+{
+    border-bottom: 1px solid #efefef;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.queue_item:hover
+{
+    background-color: #efefef;
+}
+
+.queue_item:active
+{
+    background-color: #dddddd;
+}
+
+.queue_item.active
+{
+    background-color: #efefef;
+    max-height: 300px;
+}
+
+.queue_item .queue_title_bar
+{
+    
+}
+
+.queue_item .queue_title_bar .queue_name
+{
+    font-size: 14px;
+    font-weight: 200;
+    color: #333333;
+}
+
+.queue_item .queue_title_bar .queue_progress
+{
+    font-size: 14px;
+    font-weight: 200;
+    color: #333333;
+    text-align: center;
+    /*background: linear-gradient(90deg, #da5653 50%, transparent 50%); */
+}
+
+.queue_item .queue_title_bar .queue_progress.state_2
+{
+    background-color: #333;
+    color: white;
+}
+
+.queue_item .queue_title_bar .queue_progress.state_3
+{
+    background-color: #27ae60;
+    color: white;
+}
+
+.queue_item .queue_title_bar .queue_progress.state_4
+{
+    background-color: #da5653;
+    color: white;
+}
+
+.queue_metadata
+{
+    
+}
+
+.running_view .title_bar, .archive_view .title_bar
+{
+    position: absolute;
+    z-index: 3;
+}
+
+.queue_meta_data
+{
+    padding: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.queue_meta_data .queue_meta_line
+{
+    display: flex;
+    align-items: center;
+    min-height: 30px;
+    font-size: 14px;
+}
+
+.queue_meta_data .queue_key
+{
+    min-width: 150px;
+    color: #555555;
+    font-weight: 200;
+}
+
+.queue_meta_data .queue_value
+{
+    color: #333333;
+}
+
+.sync_button
+{
+    margin-left: 50px;
+    color: #6e6e6e;
+    cursor: pointer;
+}
+
+.sync_button:hover
+{
+    color: #272727;
+}
+
+.buttonRotation {
+   -webkit-animation:spin 0.6s linear;
+    -moz-animation:spin 0.6s linear;
+    animation:spin 0.6s linear;
+}
+
+@-moz-keyframes spin {
+    100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); }
+}
+@-webkit-keyframes spin {
+    100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); }
+}
+@keyframes spin { 
+    100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); } 
+}
+
+.jtk-endpoint
+{
+    z-index: 5;
+    border: 1px solid rgba(51, 51, 51, 0.6);
+    border-radius: 50%;
+    z-index: 5;
+    background-color: rgba(51, 51, 51, 0.1);
+    visibility: visible;
+}
+
+.jtk-endpoint:hover
+{
+    background-color: rgba(51, 51, 51, 0.5);
+}
+.jtk-connector
+{
+    z-index: 4;
+}
+
+.jtk-endpoint-connected
+{
+    background-color: rgba(218, 86, 83, 0.5);
+    border: 1px solid #863533;
+    z-index: 5;
+}
+
+.jtk-endpoint-connected:hover
+{
+    background-color: rgba(218, 86, 83, 0.8);
+}
+
+.node
+{
+    z-index: 3;
+}
+
+.jtk-connector
+{
+    cursor: pointer;
+}
+
+.connector_hover_class
+{
+
+}
+
+.connector_remove_icon
+{
+    content: 'clear';
+    font-family: "Material Icons";
+    color: #272727;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    border-radius: 50%;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -moz-font-feature-settings: 'liga';
+    -moz-osx-font-smoothing: grayscale;
+    color: #e2e2e2;
+    background-color: #da5653;
+    cursor: pointer;
+}
+
+
+.jtk-overlay 
+{
+    z-index: 6;
+}
+
+.jtk-overlay .connector_remove_icon
+{
+    background-color: #e2e2e2;
+    color: #da5653;
+    z-index: 6;
+    -webkit-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    -ms-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+}
+
+.jtk-overlay.jtk-hover .connector_remove_icon
+{
+    color: #e2e2e2;
+    background-color: #da5653;
+}
+
+.nothing_selected
+{
+
+    
+}
+
+.nothing_selected_icon
+{
+    font-family: "Material Icons";
+    color: #aaa;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -moz-font-feature-settings: 'liga';
+    -moz-osx-font-smoothing: grayscale;
+    cursor: pointer;
+    text-align: center;
+}
+
+.nothing_selected_text
+{
+    color: #aaa;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.storage_view, .queue_view
+{
+    background-color: white;
+}
+
+.workflow_view .collapse, .text_editor_view .text_close
+{
+    background-color: rgba(100, 100, 100, 0.5);
+    color: white;
+    font-family: "Material Icons";
+    border: 0;
+    outline: 0;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -moz-font-feature-settings: 'liga';
+    -moz-osx-font-smoothing: grayscale;
+    cursor: pointer;
+    text-align: center;
+    content: "keyboard_arrow_right";
+    font-size: 20px;
+    z-index: 10;
+}
+
+.node .service_list_container li
+{
+    font-size: 14px;
+    color: #6e6e6e;
+    border-bottom: 1px solid #efefef;
+    cursor: pointer;
+}
+
+.node .service_list_container li:hover
+{
+    background-color: #efefef;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+.remove_service
+{
+    font-family: "Material Icons";
+    color: #6e6e6e;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -moz-font-feature-settings: 'liga';
+    -moz-osx-font-smoothing: grayscale;
+    cursor: pointer;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 50px;
+    z-index: 10;
+    border-radius: 50%;
+    display: none;
+}
+
+.remove_service.active
+{
+    display: block;
+}
+
+.remove_service:hover
+{
+    /**
+    * This hover class will not be triggered during dragging in chrome. See here:
+    * https://bugs.chromium.org/p/chromium/issues/detail?id=122746
+    * 
+    * This is a chrome bug and will be fixed during 2017. 
+    */
+    color: #da5653;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.send_workflow
+{
+    background-color: #27ae60;
+    -webkit-transition: background 0.3s ease-out;
+    -moz-transition: background 0.3s ease-out;
+    -ms-transition: background 0.3s ease-out;
+    -o-transition: background 0.3s ease-out;
+    transition: background 0.3s ease-out;
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
+    color: white;
+    -webkit-box-shadow: 0 0 8px 1px rgba(0,0,0,0.6);
+    box-shadow: 0 0 8px 1px rgba(0,0,0,0.6);
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 30px;
+    z-index: 10;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -moz-font-feature-settings: 'liga';
+    -moz-osx-font-smoothing: grayscale;
+    cursor: pointer;
+}
+
+.send_workflow:hover
+{
+    background-color: #2ecc71;
+}
+
+#popup
+{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+#popup_content
+{
+    background-color: white;
+    -webkit-box-shadow: 0 0 8px 1px rgba(0,0,0,0.6);
+    box-shadow: 0 0 8px 1px rgba(0,0,0,0.6);
+}
+
+#popup.active 
+{
+    display: block;
+}
+
+#popup.active #popup_content
+{
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 1s;
+}
+
+.error_container
+{
+    background-color: rgb(218, 86, 83);
+    background: transparent linear-gradient(135deg, rgb(255, 99, 99) 0%, rgb(186, 72, 72) 100%) repeat scroll 0% 0%;
+    background: -moz-linear-gradient(-45deg, #ff6363 0%, #ba4848 100%);
+    background: -webkit-linear-gradient(-45deg, #ff6363 0%,#ba4848 100%);
+    background: linear-gradient(135deg, #ff6363 0%,#ba4848 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6363', endColorstr='#ba4848',GradientType=1 );
+    color: white;
+}
+
+.error_container .error_title
+{
+    border-bottom: 1px solid rgb(237, 172, 171);
+}
+
+.error_buttons .default_button.reload_button
+{
+    background-color: #999 !important;
+    border-bottom: 2px solid #777 !important;
+}
+
+.ace_editor, .ace_editor div {
+font: 16px/normal 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+}
+
+.ace_editor, .ace_editor div .ace_line {
+        font: 16px/normal 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+
+    }
+
+.ace_editor, .ace_editor div .ace_line span {
+            font: 16px/normal 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+        }

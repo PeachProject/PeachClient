@@ -1,0 +1,6 @@
+[submodule "PeachShared"]
+	path = PeachShared
+	url = https://github.com/PeachProject/PeachShared.git
+[submodule "flaskServer/frontEnd/static/js/inc/ace"]
+	path = flaskServer/frontEnd/static/js/inc/ace
+	url = https://github.com/ajaxorg/ace-builds.git

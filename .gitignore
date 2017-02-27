@@ -1,0 +1,4 @@
+*.pyc
+flaskServer/config/flaskServerConfig.py
+__pycache__/
+.arcconfig

@@ -1,0 +1,70 @@
+.background_top_stripe
+{
+    width: 100%;
+    height: 50%;
+    content: '';
+    display: block;
+}
+
+.login_container_wrapper
+{
+    text-align: center;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.login_container_wrapper:before
+{
+    content: '\200B';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.login_container
+{
+    width: 550px;
+    height: 520px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo_stripe
+{
+    display: block;
+    width: 100%;
+    height: 120px;
+}
+
+.logo_stripe .logo
+{
+    margin: auto;
+    padding-top: 20px;
+}
+
+label
+{
+    margin-left: 90px;
+    margin-top: 30px;
+}
+
+input
+{
+    margin: auto;
+    margin-top: 10px;
+}
+
+input[type=checkbox]
+{
+    margin: 20px;
+    margin-left: 94px;
+    padding: 0;
+}
+
+.login_container form
+{
+    text-align: left;
+}
