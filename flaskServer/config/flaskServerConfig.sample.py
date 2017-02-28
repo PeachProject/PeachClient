@@ -4,6 +4,8 @@
 ##########################################
 ##########################################
 
+shared_folder = "<PeachClient_Git_Repo>/PeachShared/"
+
 schema_folder = "<PeachClient_Git_Repo>/PeachShared/schemas"
 
 temp_locations = {
@@ -58,7 +60,9 @@ method_names = {
 ##########################################
 ##########################################
 
-
+def init_library():
+    import sys
+    sys.path.insert(1, shared_folder)
 
 def get_schema_folder():
     return schema_folder

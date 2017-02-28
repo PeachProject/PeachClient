@@ -2,6 +2,7 @@ from flask import Flask
 import BlueprintConnector
 import sys
 import config.flaskServerConfig as FlaskConfig
+FlaskConfig.init_library()
 from updateScripts import updateScripts
 from library import onStart
 
