@@ -18,12 +18,11 @@ mysql_info = {
     "host": "<mysql_host>",
     "user": "<mysql_user>",
     "password": "<mysql_pw>",
-    "database": "<mysq_database>"
+    "database": "<mysql_database>"
 }
 
 
 frontendConfiguration = {
-        #maybe you will have to change the current domain
         "currentDomain": "<current_domain>",
 
 
