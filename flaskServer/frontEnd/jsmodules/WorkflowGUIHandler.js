@@ -335,6 +335,7 @@ var WorkflowGUIHandler = function()
 
         hide: function()
         {
+            parameterView.parameterWidget("close");            
             $(this.s.identifierForTogglableItem).removeClass("visible");
         },
 
