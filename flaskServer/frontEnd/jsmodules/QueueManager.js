@@ -53,7 +53,8 @@ var QueueManager = (function(){
                     "original_workflow_file": "Workflow-File",
                     "sending_date": "Sending Date",
                     "priority": "Priority",
-                    "status": "Status"
+                    "status": "Status",
+                    "output_file": "Download output"
                 }
             ],
             stateClassPrefix: "state_",
